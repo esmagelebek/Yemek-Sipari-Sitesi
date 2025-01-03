@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="css/anasayfa.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="wrapper">
+            <h1>Yemek Sepeti</h1>
+            <ul>
+                <li> <a href="anasayfa.html">Anasayfa</a></li>
+                <li> <a href="category.html">Kategori</a></li>
+                <li> <a href="odeme.html">Ödeme</a></li>
+                <li> <a href="profil.html">Profil</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="search-container">
+        <div class="search-background"></div> <!-- Arama çubuğu arka planı -->
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Yemek ismi girin...">
+            <button type="button" onclick="searchFood()">Ara</button>
+        </div>
+    </div>
+    <div id="searchResults"></div>
+    <script src="js/anasayfa.js"></script>
+</body>
+</html>

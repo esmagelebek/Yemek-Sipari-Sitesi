@@ -1,0 +1,113 @@
+/* Genel düzen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    background-color: black;
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+    color: white;
+    position: relative;
+    width: 100%; /* Menü genişliğini ayarlar */
+    box-sizing: border-box; /* Padding ve border genişliği dahil eder */
+}
+
+.menu h1 {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 10px; /* Sol köşeye hizalar */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin-left: auto; /* Menü öğelerini sağa hizalar */
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: gray;
+}
+
+.search-container {
+    position: relative;
+    margin-top: -1px; /* Menü ile arama çubuğu arasında boşluk bırakmaz */
+    width: 100%; /* Arama çubuğu genişliğini menü ile aynı yapar */
+    height: 100px; /* Arama çubuğunun yüksekliğini ayarlar */
+    box-sizing: border-box; /* Padding ve border genişliği dahil eder */
+}
+
+.search-background {
+    background-image: url('https://fujifilmshop.com/files/sayfa/yemekfoto/kahvalti.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(80%);
+    width: 100%;
+    height: 1050%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 0; /* Dikdörtgen şekli korur */
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.search input {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin-right: 10px; /* "Ara" butonu ile arasında mesafe bırakır */
+}
+
+.search button {
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.search button:hover {
+    background-color: darkgray;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yemek Sipariş Sistemi</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Giriş Yap</h2>
+        <form id="loginForm" action="php/login.php" method="POST">
+            <div class="input-group">
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" name="username" placeholder="Kullanıcı adınızı girin" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Şifre</label>
+                <input type="password" id="password" name="password" placeholder="Şifrenizi girin" required>
+            </div>
+            <button type="submit" class="btn">Giriş Yap</button>
+        </form>
+        <div class="register-link">
+            <p>Hesabınız yok mu? <a href="kayitol.html">Kayıt Ol</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
